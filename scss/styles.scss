@@ -132,7 +132,9 @@ header {
     // background-image: url(../contenidoMarca/osirisWEB/fondoHojas.jpg);
     // background-size: cover;
 }
-
+.item__height {
+    max-height: 70vh;
+}
 .tituloIndex {
     position: absolute;
     font-weight: 1000;
