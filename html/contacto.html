@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Osiris - Contacto</title>
+        <meta
+            name="description"
+            content="Salón de estética especializado en depilación y uñas. Servicios de podología y criolipólisis. Consulta horarios aquí.
+        "
+        />
+        <meta
+            name="keywords"
+            content="UÑAS, DEPILACIÓN, DEPILACION, MANICURA, PERDICURA, PODOLOGIA, CRIOLIPOLISIS, CEJAS, ESTETICA, OSIRIS"
+        />
+        <!-- Link Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- Link Css -->
+        <link rel="stylesheet" href="./../Css/style.css" />
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <a href="./../index.html">
+                <img
+                    id="logo"
+                    src="./../contenidoMarca/osirisWEB/logo-osiris.png"
+                    alt="Logo de Osiris"
+                />
+            </a>
+            <!-- End of logo -->
+            <!-- Nav Menu -->
+            <div>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container-fluid">
+                        <!-- Collapse Menu -->
+                        <a class="navbar-brand" href="#"></a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- NavBar -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./../index.html"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./galeria.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./turnos.html">Turnos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- End of Nav Menu -->
+        </header>
+        <!-- End of header -->
+        <!-- Main Content -->
+        <main class="contactMain">
+            <img class="imgCont" src="./../assets/photos/localOsiris.png" alt="Local de Osiris" />
+            <!-- Form -->
+            <div class="formulario">
+                <form action="">
+                    <h2>Contactenos</h2>
+                    <!-- Name -->
+                    <label for="name"></label>
+                    <input
+                        class="formBox"
+                        type="text"
+                        required
+                        id="name"
+                        placeholder="Nombre completo:*"
+                    />
+                    <!-- E-Mail -->
+                    <label for="email"></label>
+                    <input
+                        class="formBox"
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Correo electrónico:*"
+                    />
+                    <!-- Phone number -->
+                    <label for="tel"></label>
+                    <input
+                        class="formBox"
+                        type="tel"
+                        id="tel"
+                        required
+                        placeholder="Teléfono celular:*"
+                    />
+                    <!-- Sex -->
+                    <legend>Sexo:</legend>
+                    <select class="formBox" name="sex" id="sex">
+                        <option value="placeholder" disabled selected>Elija una opción</option>
+                        <option value="Women">Mujer</option>
+                        <option value="Men">Hombre</option>
+                        <option value="None">Prefiero no decirlo</option>
+                    </select>
+                    <!-- NewClient -->
+                    <label for="newclient">Nuevo cliente:</label>
+                    <input class="formBox" type="checkbox" name="new clients" id="newclient" />
+                    <!-- Comments -->
+                    <label for="comment">Comentario:</label>
+                    <textarea
+                        class="formBox"
+                        name="comments"
+                        id="comment"
+                        cols="25"
+                        rows="3"
+                    ></textarea>
+                    <!-- Buttons -->
+                    <input class="formButton" type="submit" />
+                    <input class="formButton" type="reset" />
+                </form>
+                <!-- End of Form -->
+                <!-- Location -->
+                <div class="Lctn">
+                    <h2 style="text-align: center">Ubicación</h2>
+                    <iframe
+                        class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209.26752694964674!2d-60.64336785502011!3d-32.943604787826175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3e0f86c8df%3A0xe82d29664ac1f7ce!2sOSIRIS%20Centro%20de%20Belleza!5e0!3m2!1ses!2sar!4v1624086681414!5m2!1ses!2sar"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </main>
+        <!-- End of Main Content -->
+        <!-- Footer -->
+        <footer>
+            <!-- Nav menu -->
+            <nav>
+                <ul class="navFooter">
+                    <li class="liNav"><a href="./../index.html">Home</a></li>
+                    <li class="liNav">
+                        <a href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="liNav"><a href="./galeria.html">Galería</a></li>
+                    <li class="liNav"><a href="./turnos.html">Turnos</a></li>
+                    <li class="liNav">
+                        <a class="onPage" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Contact info -->
+            <!-- Business hours -->
+            <div class="datosContacto horario">
+                <li>Días y Horarios de Atención</li>
+                <li>Lun. a Vie.: 09 a 18 hs.</li>
+                <li>Sábados: 08 a 13 hs.</li>
+
+                <!-- Social media -->
+                <div>
+                    <a
+                        target="blank"
+                        title="Instagram"
+                        href="https://www.instagram.com/osiris.1086/"
+                    >
+                        <span
+                            title="Instagram"
+                            class="iconify"
+                            data-icon="akar-icons:instagram-fill"
+                            data-inline="false"
+                        >
+                        </span>
+                    </a>
+                    <a target="blank" href="#">
+                        <span
+                            title="Ubicación"
+                            class="iconify"
+                            data-icon="simple-icons:googlemaps"
+                            data-inline="false"
+                        >
+                        </span>
+                    </a>
+                </div>
+                <!-- End of Social Media -->
+            </div>
+            <!-- Address and phone -->
+            <div class="datosContacto address">
+                <li>341-2########</li>
+                <li>Corrientes 1086</li>
+                <li>Rosario, Santa Fe</li>
+                <li>Argentina</li>
+            </div>
+            <!-- Copyright -->
+            <div class="copyRight">
+                <p>Copyright© 2021</p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+        <!-- js Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- js Iconify -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </body>
+</html>

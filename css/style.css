@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* Pagina */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  list-style: none;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 62.5%;
+  text-decoration: unset; }
+
+a, a:hover {
+  color: black;
+  text-decoration: none; }
+
+h1 {
+  font-family: "fuenteTitulo";
+  font-size: 4.5rem;
+  text-align: center; }
+
+.tituloMain {
+  color: #e2d2bb;
+  letter-spacing: 0.4rem;
+  grid-area: titulo;
+  text-align: center;
+  text-shadow: -3px 2px 2px #65685d; }
+
+h2 {
+  color: #e2d2bb;
+  font-family: "fuenteTitulo2";
+  font-size: 3.5rem;
+  text-align: center; }
+
+@font-face {
+  font-family: "fuenteTitulo";
+  src: url(../contenidoMarca/fuentes/futura-medium-bt.ttf); }
+
+@font-face {
+  font-family: "fuenteTitulo2";
+  src: url(../contenidoMarca/fuentes/futura-book-bt.ttf); }
+
+@font-face {
+  font-family: "fuenteTexto";
+  src: url(../contenidoMarca/fuentes/futura-normal.ttf); }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.texto {
+  font-family: "fuenteTexto"; }
+
+/* Header */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  background-image: linear-gradient(to bottom, #fef1e0, #fff2ec, #fff6f8, #fffbfe, #ffffff);
+  border-bottom: 1px solid black;
+  padding-left: 50px;
+  padding: 4em; }
+
+#logo {
+  display: flex;
+  width: 20rem; }
+
+/* Nav */
+.navbar-nav {
+  font-size: 4rem;
+  gap: 2rem; }
+
+.active {
+  color: saddlebrown;
+  font-weight: bolder; }
+
+.liNav {
+  font-size: 2.5rem; }
+
+.liNav:hover {
+  text-decoration: none;
+  text-decoration: underline;
+  color: saddlebrown; }
+
+/* Index */
+/* Main */
+.heroSection {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #ae7f6d 0%, #c49572 28%, #ba996c 93%); }
+
+.tituloIndex {
+  position: absolute;
+  font-weight: 1000;
+  color: transparent;
+  background: url(./../assets/Img/texturaMadera.jpg) repeat;
+  background-position: center center;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  text-align: center;
+  max-width: 267px;
+  letter-spacing: 0.4rem; }
+
+/* Section Index */
+.ctIndex {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%); }
+  .ctIndex__section {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 3rem 0 3rem 0; }
+    .ctIndex__section__title {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.4rem;
+      grid-area: tituloIn;
+      text-align: center;
+      text-shadow: -3px 2px 2px #65685d; }
+  .ctIndex__serv {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem; }
+    .ctIndex__serv__img {
+      width: 270px;
+      height: 400px;
+      object-fit: cover;
+      box-shadow: 0 0px 10px 5px #2b2c28b4;
+      border-radius: 8px; }
+    .ctIndex__serv__span {
+      color: #e2d2bb;
+      font-family: "fuenteTitulo2";
+      font-size: 2.9rem;
+      width: 200px;
+      text-align: center;
+      text-shadow: -2px 1px 2px #465129; }
+    .ctIndex__serv__bt {
+      width: 90px;
+      height: 35px;
+      background: #f6f0e7;
+      border-radius: 44px;
+      color: #809056;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all 300ms; }
+      .ctIndex__serv__bt:hover {
+        transform: scale(1.05) translateY(-10px);
+        transition: all 250ms;
+        background: #809056;
+        box-shadow: 0 10px 12px #2b2c28a2;
+        color: #f6f0e7; }
+
+/* "Servicios" Page */
+.ctServi {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%); }
+  .ctServi #tituloServ {
+    grid-area: tituloServ; }
+  .ctServi__img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 480px;
+    box-shadow: 0 0px 10px 5px #2b2c28b4;
+    border-radius: 10px; }
+  .ctServi__data {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .ctServi__data__list {
+      color: #77612d;
+      text-align: center;
+      font-family: "fuenteTexto";
+      font-size: 2.8rem;
+      font-weight: 600;
+      list-style-type: square;
+      list-style-position: inside; }
+      .ctServi__data__listhover {
+        transform: scale(1.2);
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 500ms; }
+
+/* "Galería" Page */
+.galleryMain {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
+  padding: 3rem; }
+  .galleryMain .ctGal {
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(1fr);
+    gap: 1rem; }
+    .galleryMain .ctGal__figu {
+      position: relative; }
+      .galleryMain .ctGal__figu__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 0px 10px 5px #2b2c28b4;
+        border-radius: 8px; }
+      .galleryMain .ctGal__figu__bt {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: rgba(151, 109, 32, 0.527);
+        border: 3px solid rgba(85, 67, 60, 0.438);
+        cursor: pointer;
+        font-size: 2.5rem;
+        transition: all 300ms; }
+        .galleryMain .ctGal__figu__bt:hover {
+          transform: rotate(90deg) scale(1.3);
+          transition: all 300ms; }
+
+/* "Turnos" Page */
+#mainTurnos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
+  padding: 3rem;
+  gap: 3rem; }
+  #mainTurnos .imgTurnos {
+    width: 80%;
+    max-width: 400px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0px 10px 5px #2b2c28b4;
+    border-radius: 10px; }
+
+#turnExpl {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center; }
+
+b {
+  font-size: 1.8rem; }
+
+#florLotus {
+  width: 7rem;
+  height: 7rem; }
+
+#prSpan {
+  width: 150px; }
+
+.textoTurnos {
+  font-family: "fuenteTexto";
+  font-size: 1.8rem;
+  text-align: center; }
+
+/* "Contacto" Page */
+.contactMain {
+  background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
+  padding: 3rem; }
+
+.imgCont {
+  display: flex;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0px 10px 5px #2b2c28b4;
+  border-radius: 10px; }
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.6rem;
+  gap: 1.5rem;
+  color: #462d1f;
+  padding-bottom: 40px;
+  padding-top: 50px; }
+  form .formBox {
+    width: 80%;
+    max-width: 350px;
+    height: 30px;
+    background-color: rgba(85, 67, 60, 0.4);
+    border-radius: 15px;
+    padding-left: 10px; }
+  form ::placeholder {
+    color: #f0e3dc;
+    font-size: 1.1rem; }
+  form select {
+    color: #f0e3dc; }
+  form textarea {
+    padding-top: 1rem; }
+  form [type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    transition: all 250ms; }
+    form [type="checkbox"] [type="checkbox"]:hover {
+      transform: scale(1.2);
+      transition: all 250ms; }
+  form legend {
+    float: initial;
+    width: initial;
+    margin-bottom: initial; }
+  form .formButton {
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: rgba(85, 67, 60, 0.99);
+    color: #f0e3dc;
+    transition: all 500ms; }
+    form .formButton .formButton:hover {
+      transform: scale(1.2);
+      transition: all 500ms; }
+
+iframe {
+  margin-top: 20px; }
+
+.map {
+  width: 100%; }
+
+/* 404 */
+.error {
+  position: relative;
+  height: 68vw; }
+  .error img {
+    width: 100%;
+    border-bottom: 1px solid black; }
+  .error__btnError {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 12vw;
+    height: 4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    left: 84vw;
+    top: 43vw;
+    background: #4a56cc;
+    border-radius: 20px; }
+    .error__btnError a {
+      color: pink; }
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 167px 50px;
+  grid-template-areas: "nav horario direccion" "copyright copyright copyright";
+  background-image: url(./../assets/Img/texturaMarmol.jpg);
+  background-size: cover;
+  padding: 7rem 7rem 0rem 7rem;
+  border-top: 1px solid black; }
+  footer .navFooter {
+    grid-area: nav;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    border-right: 1px solid black; }
+  footer .datosContacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    color: black;
+    list-style: none;
+    font-size: 2.5rem; }
+  footer .horario {
+    grid-area: horario;
+    justify-self: end;
+    padding: 0 50px 0 0;
+    border-right: 1px solid black; }
+  footer .address {
+    grid-area: direccion;
+    padding: 0 0 0 50px; }
+  footer .copyRight {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: copyright;
+    color: black;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%; }
+  footer .iconify {
+    height: 2rem;
+    width: 2rem; }
+
+/* Medias Query */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-weight: 500; }
+  h2 {
+    font-weight: 500; }
+  header {
+    position: static;
+    top: 0; }
+  .ctIndex__section__title {
+    font-size: 2.8rem; }
+  .ctIndex__serv__span {
+    font-size: 2.4rem; }
+  .ctIndex__serv__bt {
+    width: 75px;
+    height: 30px; }
+  .ctIndex__serv__img {
+    width: 230px;
+    height: 350px; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 50px;
+    grid-template-areas: " horario direccion" "copyright copyright";
+    background-image: url(../assets/Img/texturaMarmol.jpg);
+    background-size: cover;
+    padding: 3rem 3rem 0rem 3rem; }
+    footer .navFooter {
+      display: none; }
+    footer .datosContacto {
+      font-size: 2rem; } }
+
+@media only screen and (min-width: 600px) {
+  /* index */
+  .tituloIndex {
+    font-size: 6.5rem;
+    max-width: 420px;
+    height: 28rem;
+    letter-spacing: 1rem; }
+  /* gallery */
+  .ctGal {
+    max-width: 450px; }
+    .ctGal__figu__bt {
+      position: absolute;
+      bottom: 0;
+      right: 0; } }
+
+@media only screen and (min-width: 900px) {
+  /* * */
+  .tituloIndex {
+    font-size: 7.5rem;
+    max-width: 510px; }
+  h2 {
+    font-size: 4.2rem; }
+  /* Header */
+  #logo {
+    width: 22rem; }
+  /* Index */
+  .ctIndex__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 550px 550px;
+    grid-template-areas: ". tituloIn tituloIn ." ". depiIn maniIn ." ". perfIn  podoIn .";
+    background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
+    height: 1350px;
+    padding: 2rem;
+    gap: 6rem; }
+    .ctIndex__section__serv {
+      gap: 2rem; }
+    .ctIndex__section__title {
+      font-size: 1.8rem; }
+  #depi {
+    grid-area: depiIn; }
+  #perf {
+    grid-area: perfIn; }
+  #mani {
+    grid-area: maniIn; }
+  #podo {
+    grid-area: podoIn; }
+  /* "Servicios" */
+  .ctServi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 500px 500px 500px 500px;
+    grid-template-areas: ". tituloServ ." "depiImg depiImg depiLi" "maniLi maniImg maniImg" "podoImg podoImg podoLi" "perfLi perfImg perfImg";
+    align-items: center;
+    padding: 3rem;
+    background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%); }
+    .ctServi__data__list {
+      font-size: 3rem; }
+    .ctServi__img {
+      width: 80%;
+      object-fit: cover;
+      max-width: 700px; }
+  #tituloServ {
+    grid-area: tituloServ;
+    justify-content: center;
+    align-items: center; }
+  #depiLi {
+    grid-area: depiLi;
+    justify-self: center;
+    align-self: center; }
+  #depiImg {
+    grid-area: depiImg;
+    align-self: center;
+    justify-self: center; }
+  #maniLi {
+    grid-area: maniLi;
+    justify-self: center;
+    align-self: center; }
+  #maniImg {
+    grid-area: maniImg;
+    align-self: center;
+    justify-self: center; }
+  #podoLi {
+    grid-area: podoLi;
+    justify-self: center;
+    align-self: center; }
+  #podoImg {
+    grid-area: podoImg;
+    align-self: center;
+    justify-self: center; }
+  #perfLi {
+    grid-area: perfLi;
+    justify-self: center;
+    align-self: center; }
+  #perfImg {
+    grid-area: perfImg;
+    align-self: center;
+    justify-self: center; }
+  /* "Galería" */
+  .ctGal {
+    display: grid;
+    max-width: 752px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 220px 220px 220px; }
+    .ctGal__figu__bt {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+  .ctGal__figu:nth-child(1) {
+    grid-row-start: span 2;
+    grid-column-start: span 2; }
+  .ctGal__figu:nth-child(2) {
+    grid-column-start: span 2; }
+  .ctGal__figu:nth-child(5) {
+    grid-column-start: span 2;
+    grid-row-start: span 2; }
+  .ctGal__figu:nth-child(6) {
+    grid-column-start: span 3; }
+  /* "Turnos" */
+  #mainTurnos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 500px 400px; }
+    #mainTurnos .imgTurnos {
+      grid-column-start: span 3;
+      max-width: 650px; }
+  #tiTurno {
+    grid-column-start: span 3; }
+  #turnExpl {
+    grid-column-start: span 2;
+    grid-column-end: -1;
+    gap: 1rem;
+    max-width: 400px;
+    align-self: center;
+    justify-self: center; }
+  .textoTurnos {
+    font-size: 2rem; }
+  /* "Contacto" */
+  .formulario {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+    align-items: baseline; }
+  .imgCont {
+    max-width: 650px; }
+  form {
+    width: 550px; }
+  .map {
+    height: 30vw;
+    width: 30vw; } }
+
+@media only screen and (min-width: 1040px) {
+  footer {
+    padding-left: 100px; }
+  .galleryMain .ctGal {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 250px 250px 250px;
+    gap: 1.6rem; } }
+
+@media only screen and (min-width: 1250px) {
+  .ctIndex__section {
+    grid-template-rows: 80px 550px;
+    grid-template-areas: ". tituloIn tituloIn ." "depiIn maniIn perfIn  podoIn";
+    height: 700px; }
+  .ctServi__data__list {
+    font-size: 4.5rem; }
+  #tituloServ {
+    font-size: 6rem; } }
+
+/* Correcciones Bootstrap */
+* {
+  box-sizing: initial;
+  line-height: initial; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: initial;
+  line-height: initial; }
