@@ -98,6 +98,18 @@ header {
 .item__height {
   max-height: 80vh; }
 
+.tituloIndex {
+  position: absolute;
+  font-weight: 1000;
+  color: transparent;
+  background: url(./../assets/Img/texturaMadera.jpg) repeat;
+  background-position: center center;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  text-align: center;
+  max-width: 267px;
+  letter-spacing: 0.4rem; }
+
 /* Section Index */
 .ctIndex {
   display: flex;
@@ -401,6 +413,14 @@ footer {
   footer .iconify {
     height: 2rem;
     width: 2rem; }
+
+.liNav {
+  font-size: 2.5rem; }
+
+.liNav:hover {
+  text-decoration: none;
+  text-decoration: underline;
+  color: saddlebrown; }
 
 /* Medias Query */
 @media only screen and (max-width: 600px) {
