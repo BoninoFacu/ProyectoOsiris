@@ -82,11 +82,7 @@ header {
   color: saddlebrown;
   font-weight: bolder; }
 
-.liNav {
-  font-size: 2.5rem; }
-
-.liNav:hover {
-  text-decoration: none;
+.nav-item:hover {
   text-decoration: underline;
   color: saddlebrown; }
 
@@ -100,19 +96,7 @@ header {
   background-image: linear-gradient(to top, #ae7f6d 0%, #c49572 28%, #ba996c 93%); }
 
 .item__height {
-  max-height: 70vh; }
-
-.tituloIndex {
-  position: absolute;
-  font-weight: 1000;
-  color: transparent;
-  background: url(./../assets/Img/texturaMadera.jpg) repeat;
-  background-position: center center;
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  text-align: center;
-  max-width: 267px;
-  letter-spacing: 0.4rem; }
+  max-height: 80vh; }
 
 /* Section Index */
 .ctIndex {
