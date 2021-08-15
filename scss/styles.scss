@@ -233,7 +233,7 @@ header {
             list-style-type: square;
             list-style-position: inside;
 
-            &hover {
+            & li:hover {
                 transform: scale(1.2);
                 text-decoration: underline;
                 cursor: pointer;

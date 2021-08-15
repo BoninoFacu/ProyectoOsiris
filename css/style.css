@@ -196,7 +196,7 @@ header {
       font-weight: 600;
       list-style-type: square;
       list-style-position: inside; }
-      .ctServi__data__listhover {
+      .ctServi__data__list li:hover {
         transform: scale(1.2);
         text-decoration: underline;
         cursor: pointer;
