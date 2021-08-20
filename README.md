@@ -9,17 +9,17 @@ La página esta hecha para un negocio real.
 
 ## Objetivo
 
-La principal idea es la entrega final del curso de CoderHouse, pero la página esta pensada para ser utilizada, orientada al rubro de estética y dirigida a un públido de entre 30 y 70 años, de ahi su paletada de colores y simplicidad al navegar.
+La principal idea es la entrega final del curso de CoderHouse, pero la página esta pensada para ser utilizada, orientada al rubro de estética y dirigida a un público de entre 30 y 70 años, de ahi su paleta de colores y simplicidad al navegar.
 En un futuro espero poder agregarle JavaScript e integrarle un E-Commerce
 
 ## Lenguajes
 
-Esta hecha en su totalidad con Html, Css y Sass.
+Esta hecha en su totalidad con Html, Css y Scss.
 
 ## Autores
 
 Soy el unico desarrollador de la página.
-Recibi ayuda de Federico Castro, mi tutor en CoderHouse, y de Maximiliano Torreblanca, profesor en el curso de Desarrollo Web en CoderHouse. Agradecimiento a ambos.
+Recibi ayuda de Federico Castro, mi tutor en CoderHouse y de Maximiliano Torreblanca, profesor en el curso de Desarrollo Web en CoderHouse. Agradecimiento a ambos.
 
 ## Contribuciones
 
