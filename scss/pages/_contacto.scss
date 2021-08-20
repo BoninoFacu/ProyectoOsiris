@@ -1,0 +1,92 @@
+/* "Contacto" Page */
+.contactMain {
+    background: $bg-gr-mains;
+    padding: 3rem;
+}
+
+.imgCont {
+    display: flex;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0px 10px 5px #2b2c28b4;
+    border-radius: 10px;
+}
+
+form {
+    @include flex(column, flex-start, center);
+    font-weight: bold;
+    font-size: 2.6rem;
+    gap: 1.5rem;
+    color: #462d1f;
+    padding-bottom: 40px;
+    padding-top: 50px;
+
+    .formBox {
+        width: 80%;
+        max-width: 350px;
+        height: 30px;
+        background-color: rgba(85, 67, 60, 0.4);
+        border-radius: 15px;
+        padding-left: 10px;
+        border: 1.5px solid rgba(85, 67, 60, 0.8);
+    }
+
+    ::placeholder {
+        color: #f0e3dc;
+        font-size: 1.1rem;
+    }
+
+    select {
+        color: #f0e3dc;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(85, 67, 60, 0.8);
+            outline: none;
+        }
+    }
+
+    textarea {
+        padding-top: 1rem;
+    }
+
+    [type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+        transition: all 250ms;
+
+        [type="checkbox"]:hover {
+            transform: scale(1.2);
+            transition: all 250ms;
+        }
+    }
+
+    legend {
+        float: initial;
+        width: initial;
+        margin-bottom: initial;
+    }
+
+    .formButton {
+        width: 100px;
+        height: 25px;
+        border-radius: 30px;
+        background-color: rgba(85, 67, 60, 0.99);
+        box-shadow: 0 2px 0 rgb(41, 35, 28);
+        color: #f0e3dc;
+        transition: all 50ms;
+
+        &:active {
+            transform: translateY(2px);
+            box-shadow: 0 0px 0 rgb(41, 35, 28);
+        }
+    }
+}
+
+iframe {
+    margin-top: 20px;
+}
+.map {
+    width: 100%;
+}

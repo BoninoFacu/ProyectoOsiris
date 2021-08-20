@@ -1,0 +1,40 @@
+/* "Servicios" Page */
+.ctServi {
+    @include flex(column, center, center);
+    gap: 3rem;
+    padding: 3rem;
+    background: $bg-gr-mains;
+
+    #tituloServ {
+        grid-area: tituloServ;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        max-width: 480px;
+        box-shadow: 0 0px 10px 5px #2b2c28b4;
+        border-radius: 10px;
+    }
+
+    &__data {
+        @include flex(column, flex-start, center);
+
+        &__list {
+            color: rgb(119, 97, 45);
+            text-align: center;
+            font-family: "fuenteTexto";
+            font-size: 2.8rem;
+            font-weight: 600;
+            list-style-type: square;
+            list-style-position: inside;
+
+            & li:hover {
+                transform: scale(1.2);
+                text-decoration: underline;
+                cursor: pointer;
+                transition: all 500ms;
+            }
+        }
+    }
+}

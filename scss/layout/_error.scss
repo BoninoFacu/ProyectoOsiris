@@ -1,0 +1,24 @@
+/* 404 */
+.error {
+    position: relative;
+    height: 68vw;
+    img {
+        width: 100%;
+        border-bottom: $borderNormal;
+    }
+    &__btnError {
+        @include flex(column, center, center);
+        position: absolute;
+        width: 12vw;
+        height: 4vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3vw;
+        left: 84vw;
+        top: 43vw;
+        background: #4a56cc;
+        border-radius: 20px;
+        a {
+            color: pink;
+        }
+    }
+}

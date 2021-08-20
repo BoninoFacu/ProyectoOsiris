@@ -1,0 +1,32 @@
+/* Header */
+header {
+    @include flex(row nowrap, space-between, center);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background-image: linear-gradient(to bottom, #fef1e0, #fff2ec, #fff6f8, #fffbfe, #ffffff);
+    border-bottom: $borderNormal;
+    padding-left: 50px;
+    padding: 4em;
+}
+
+#logo {
+    display: flex;
+    width: $anchoLogo;
+}
+
+/* Nav */
+.navbar-nav {
+    font-size: 4rem;
+    gap: 2rem;
+}
+
+.active {
+    color: saddlebrown;
+    font-weight: bolder;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: saddlebrown;
+}

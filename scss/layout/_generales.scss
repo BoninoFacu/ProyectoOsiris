@@ -1,0 +1,54 @@
+/* Pagina */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    list-style: none;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 62.5%;
+    text-decoration: unset;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        @extend a;
+    }
+}
+
+h1 {
+    font-family: "fuenteTitulo";
+    font-size: $fonth1;
+    text-align: center;
+}
+.tituloMain {
+    color: $colorTitulo;
+    letter-spacing: 0.4rem;
+    grid-area: titulo;
+    text-align: center;
+    text-shadow: -3px 2px 2px #65685d;
+}
+
+h2 {
+    color: $colorTitulo;
+    font-family: "fuenteTitulo2";
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto {
+    font-family: "fuenteTexto";
+}

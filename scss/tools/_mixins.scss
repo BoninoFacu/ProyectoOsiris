@@ -1,0 +1,7 @@
+// mixins
+@mixin flex($ff, $justify, $aling) {
+    display: flex;
+    flex-flow: $ff;
+    justify-content: $justify;
+    align-items: $aling;
+}

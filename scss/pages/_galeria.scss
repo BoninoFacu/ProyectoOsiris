@@ -1,0 +1,46 @@
+/* "Galería" Page */
+
+.galleryMain {
+    @include flex(column, flex-start, center);
+    background: $bg-gr-mains;
+    padding: 3rem;
+
+    .ctGal {
+        display: grid;
+        max-width: 90%;
+        grid-template-columns: repeat(1fr);
+        gap: 1rem;
+
+        &__figu {
+            position: relative;
+
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 0 0px 10px 5px #2b2c28b4;
+                border-radius: 8px;
+            }
+
+            &__bt {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 45px;
+                height: 45px;
+                margin: 10px;
+                border-radius: 10px;
+                background-color: rgba(151, 109, 32, 0.527);
+                border: 3px solid rgba(85, 67, 60, 0.438);
+                cursor: pointer;
+                font-size: 2.5rem;
+                transition: all 300ms;
+
+                &:hover {
+                    transform: rotate(90deg) scale(1.3);
+                    transition: all 300ms;
+                }
+            }
+        }
+    }
+}

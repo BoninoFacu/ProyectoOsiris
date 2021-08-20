@@ -1,0 +1,84 @@
+/* Index */
+/* Main */
+
+.heroSection {
+    @include flex(column, center, center);
+    background-image: linear-gradient(to top, rgba(174, 127, 109, 1) 0%, #c49572 28%, #ba996c 93%);
+}
+.item__height {
+    max-height: 80vh;
+}
+.tituloIndex {
+    position: absolute;
+    font-weight: 1000;
+    color: transparent;
+    background: url(./../assets/Img/texturaMadera.jpg) repeat;
+    background-position: center center;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    text-align: center;
+    max-width: 267px;
+    letter-spacing: 0.4rem;
+}
+
+/* Section Index */
+
+.ctIndex {
+    display: flex;
+    justify-content: center;
+    background: $bg-gr-mains;
+
+    &__section {
+        @include flex(column, flex-start, center);
+        gap: 1.8rem;
+        padding: 3rem 0 3rem 0;
+
+        &__title {
+            @include flex(row, center, center);
+            letter-spacing: 0.4rem;
+            grid-area: tituloIn;
+            text-align: center;
+            text-shadow: -3px 2px 2px #65685d;
+        }
+    }
+
+    &__serv {
+        @include flex(column nowrap, start, center);
+        gap: 1.5rem;
+
+        &__img {
+            width: 270px;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 0 0px 10px 5px #2b2c28b4;
+            border-radius: 8px;
+        }
+
+        &__span {
+            color: $colorTitulo;
+            font-family: "fuenteTitulo2";
+            font-size: 2.9rem;
+            width: 200px;
+            text-align: center;
+            text-shadow: -2px 1px 2px #465129;
+        }
+
+        &__bt {
+            width: 90px;
+            height: 35px;
+            background: #f6f0e7;
+            border-radius: 44px;
+            color: #809056;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover {
+                transform: scale(1.05) translateY(-10px);
+                transition: all 250ms;
+                background: #809056;
+                box-shadow: 0 10px 12px #2b2c28a2;
+                color: #f6f0e7;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 167px 50px;
+    grid-template-areas:
+        "nav horario direccion"
+        "copyright copyright copyright";
+    background-image: url(./../assets/Img/texturaMarmol.jpg);
+    background-size: cover;
+    padding: 7rem 7rem 0rem 7rem;
+    border-top: $borderNormal;
+
+    .navFooter {
+        grid-area: nav;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.5rem;
+        border-right: $borderNormal;
+    }
+
+    .datosContacto {
+        @include flex(column nowrap, space-between, stretch);
+        color: rgb(0, 0, 0);
+        list-style: none;
+        font-size: 2.5rem;
+    }
+    .horario {
+        grid-area: horario;
+        justify-self: end;
+        padding: 0 50px 0 0;
+        border-right: $borderNormal;
+    }
+    .address {
+        grid-area: direccion;
+        padding: 0 0 0 50px;
+    }
+    .copyRight {
+        @include flex(row, center, center);
+        grid-area: copyright;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+    .iconify {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+.liNav {
+    font-size: 2.5rem;
+}
+
+.liNav:hover {
+    text-decoration: none;
+    text-decoration: underline;
+    color: saddlebrown;
+}

@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* Fuentes */
+@font-face {
+  font-family: "fuenteTitulo";
+  src: url(../contenidoMarca/fuentes/futura-medium-bt.ttf); }
+
+@font-face {
+  font-family: "fuenteTitulo2";
+  src: url(../contenidoMarca/fuentes/futura-book-bt.ttf); }
+
+@font-face {
+  font-family: "fuenteTexto";
+  src: url(../contenidoMarca/fuentes/futura-normal.ttf); }
+
 /* Pagina */
 * {
   margin: 0;
@@ -36,18 +49,6 @@ h2 {
   font-family: "fuenteTitulo2";
   font-size: 3.5rem;
   text-align: center; }
-
-@font-face {
-  font-family: "fuenteTitulo";
-  src: url(../contenidoMarca/fuentes/futura-medium-bt.ttf); }
-
-@font-face {
-  font-family: "fuenteTitulo2";
-  src: url(../contenidoMarca/fuentes/futura-book-bt.ttf); }
-
-@font-face {
-  font-family: "fuenteTexto";
-  src: url(../contenidoMarca/fuentes/futura-normal.ttf); }
 
 body {
   font-family: Arial, Helvetica, sans-serif; }
@@ -308,12 +309,16 @@ form {
     height: 30px;
     background-color: rgba(85, 67, 60, 0.4);
     border-radius: 15px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    border: 1.5px solid rgba(85, 67, 60, 0.8); }
   form ::placeholder {
     color: #f0e3dc;
     font-size: 1.1rem; }
   form select {
     color: #f0e3dc; }
+    form select:hover, form select:focus {
+      background-color: rgba(85, 67, 60, 0.8);
+      outline: none; }
   form textarea {
     padding-top: 1rem; }
   form [type="checkbox"] {
@@ -332,11 +337,12 @@ form {
     height: 25px;
     border-radius: 30px;
     background-color: rgba(85, 67, 60, 0.99);
+    box-shadow: 0 2px 0 #29231c;
     color: #f0e3dc;
-    transition: all 500ms; }
-    form .formButton .formButton:hover {
-      transform: scale(1.2);
-      transition: all 500ms; }
+    transition: all 50ms; }
+    form .formButton:active {
+      transform: translateY(2px);
+      box-shadow: 0 0px 0 #29231c; }
 
 iframe {
   margin-top: 20px; }
