@@ -19,7 +19,7 @@ Esta hecha en su totalidad con Html, Css y Scss.
 ## Autores
 
 Soy el unico desarrollador de la página.
-Recibi ayuda de Federico Castro, mi tutor en CoderHouse y de Maximiliano Torreblanca, profesor en el curso de Desarrollo Web en CoderHouse. Agradecimiento a ambos.
+Recibi ayuda de Federico Castro y Maria Jausoro, tutores en CoderHouse y de Maximiliano Torreblanca, profesor en el curso de Desarrollo Web en CoderHouse. Agradecimiento a ellos.
 
 ## Contribuciones
 
