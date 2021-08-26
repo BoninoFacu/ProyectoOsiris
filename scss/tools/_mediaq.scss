@@ -64,14 +64,6 @@
 
 // Min 600px
 @media only screen and (min-width: 600px) {
-    /* index */
-    .tituloIndex {
-        font-size: 6.5rem;
-        max-width: 420px;
-        height: 28rem;
-        letter-spacing: 1rem;
-    }
-
     /* gallery */
     .ctGal {
         max-width: 450px;
@@ -87,10 +79,6 @@
 // Min 900px
 @media only screen and (min-width: 900px) {
     /* * */
-    .tituloIndex {
-        font-size: 7.5rem;
-        max-width: 510px;
-    }
     h2 {
         font-size: 4.2rem;
     }

@@ -28,13 +28,6 @@
             font-weight: 600;
             list-style-type: square;
             list-style-position: inside;
-
-            & li:hover {
-                transform: scale(1.2);
-                text-decoration: underline;
-                cursor: pointer;
-                transition: all 500ms;
-            }
         }
         .tildes {
             font-size: 0.9em;

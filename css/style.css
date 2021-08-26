@@ -101,18 +101,6 @@ header {
 .item__height {
   max-height: 80vh; }
 
-.tituloIndex {
-  position: absolute;
-  font-weight: 1000;
-  color: transparent;
-  background: url(./../assets/Img/texturaMadera.jpg) repeat;
-  background-position: center center;
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  text-align: center;
-  max-width: 267px;
-  letter-spacing: 0.4rem; }
-
 /* Section Index */
 .ctIndex {
   display: flex;
@@ -199,11 +187,6 @@ header {
       font-weight: 600;
       list-style-type: square;
       list-style-position: inside; }
-      .ctServi__data__list li:hover {
-        transform: scale(1.2);
-        text-decoration: underline;
-        cursor: pointer;
-        transition: all 500ms; }
     .ctServi__data .tildes {
       font-size: 0.9em; }
 
@@ -315,7 +298,9 @@ form {
   gap: 1.5rem;
   color: #462d1f;
   padding-bottom: 40px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-family: "fuentetitulo2";
+  font-weight: bold; }
   form .formBox {
     width: 80%;
     max-width: 350px;
@@ -326,9 +311,10 @@ form {
     border: 1.5px solid rgba(85, 67, 60, 0.8); }
   form ::placeholder {
     color: #f0e3dc;
-    font-size: 1.1rem; }
+    font-size: 1.7rem; }
   form select {
-    color: #f0e3dc; }
+    color: #f0e3dc;
+    font-size: 1.7rem; }
     form select:hover, form select:focus {
       background-color: rgba(85, 67, 60, 0.8);
       outline: none; }
@@ -336,11 +322,9 @@ form {
     padding-top: 1rem; }
   form [type="checkbox"] {
     width: 2rem;
-    height: 2rem;
-    transition: all 250ms; }
-    form [type="checkbox"] [type="checkbox"]:hover {
-      transform: scale(1.2);
-      transition: all 250ms; }
+    height: 2rem; }
+  form option {
+    font-size: 1.7rem; }
   form legend {
     float: initial;
     width: initial;
@@ -483,12 +467,6 @@ footer {
       text-align: right; } }
 
 @media only screen and (min-width: 600px) {
-  /* index */
-  .tituloIndex {
-    font-size: 6.5rem;
-    max-width: 420px;
-    height: 28rem;
-    letter-spacing: 1rem; }
   /* gallery */
   .ctGal {
     max-width: 450px; }
@@ -499,9 +477,6 @@ footer {
 
 @media only screen and (min-width: 900px) {
   /* * */
-  .tituloIndex {
-    font-size: 7.5rem;
-    max-width: 510px; }
   h2 {
     font-size: 4.2rem; }
   /* Header */

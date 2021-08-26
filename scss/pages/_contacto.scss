@@ -21,6 +21,8 @@ form {
     color: #462d1f;
     padding-bottom: 40px;
     padding-top: 50px;
+    font-family: "fuentetitulo2";
+    font-weight: bold;
 
     .formBox {
         width: 80%;
@@ -34,11 +36,12 @@ form {
 
     ::placeholder {
         color: #f0e3dc;
-        font-size: 1.1rem;
+        font-size: 1.7rem;
     }
 
     select {
         color: #f0e3dc;
+        font-size: 1.7rem;
 
         &:hover,
         &:focus {
@@ -54,12 +57,10 @@ form {
     [type="checkbox"] {
         width: 2rem;
         height: 2rem;
-        transition: all 250ms;
+    }
 
-        [type="checkbox"]:hover {
-            transform: scale(1.2);
-            transition: all 250ms;
-        }
+    option {
+        font-size: 1.7rem;
     }
 
     legend {

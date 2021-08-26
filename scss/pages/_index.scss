@@ -5,20 +5,20 @@
     @include flex(column, center, center);
     background-image: linear-gradient(to top, rgba(174, 127, 109, 1) 0%, #c49572 28%, #ba996c 93%);
 }
+// .tituloIndex {
+//     position: absolute;
+//     z-index: 9;
+//     font-weight: 100;
+//     color: #fff;
+//     background: black;
+//     border-radius: 30px;
+//     text-align: center;
+//     letter-spacing: 0.4rem;
+//     padding: 0px 10px 10px 10px;
+//     font-size: calc(0.5rem + 6vw);
+// }
 .item__height {
     max-height: 80vh;
-}
-.tituloIndex {
-    position: absolute;
-    font-weight: 1000;
-    color: transparent;
-    background: url(./../assets/Img/texturaMadera.jpg) repeat;
-    background-position: center center;
-    background-clip: inherit;
-    -webkit-background-clip: text;
-    text-align: center;
-    max-width: 267px;
-    letter-spacing: 0.4rem;
 }
 
 /* Section Index */
