@@ -31,7 +31,7 @@
     &__section {
         @include flex(column, flex-start, center);
         gap: 1.8rem;
-        padding: 3rem 0 3rem 0;
+        padding: 5rem 0 3rem 0;
 
         &__title {
             @include flex(row, center, center);

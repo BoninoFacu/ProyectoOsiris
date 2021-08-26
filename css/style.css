@@ -76,6 +76,8 @@ header {
 
 /* Nav */
 .navbar-nav {
+  font-family: "fuenteTitulo";
+  font-weight: bold;
   font-size: 4rem;
   gap: 2rem; }
 
@@ -122,7 +124,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 1.8rem;
-    padding: 3rem 0 3rem 0; }
+    padding: 5rem 0 3rem 0; }
     .ctIndex__section__title {
       display: flex;
       flex-flow: row;
@@ -202,6 +204,8 @@ header {
         text-decoration: underline;
         cursor: pointer;
         transition: all 500ms; }
+    .ctServi__data .tildes {
+      font-size: 0.9em; }
 
 /* "Galería" Page */
 .galleryMain {
@@ -393,7 +397,8 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     gap: 0.5rem;
-    border-right: 1px solid black; }
+    border-right: 1px solid black;
+    font-family: "fuenteTitutlo"; }
   footer .datosContacto {
     display: flex;
     flex-flow: column nowrap;
@@ -401,15 +406,18 @@ footer {
     align-items: stretch;
     color: black;
     list-style: none;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-family: "fuenteTitutlo"; }
   footer .horario {
     grid-area: horario;
     justify-self: end;
     padding: 0 50px 0 0;
-    border-right: 1px solid black; }
+    border-right: 1px solid black;
+    font-family: "fuenteTitutlo"; }
   footer .address {
     grid-area: direccion;
-    padding: 0 0 0 50px; }
+    padding: 0 0 0 50px;
+    font-family: "fuenteTitutlo"; }
   footer .copyRight {
     display: flex;
     flex-flow: row;
@@ -419,7 +427,8 @@ footer {
     color: black;
     font-size: 2rem;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    font-family: "fuenteTitutlo"; }
   footer .iconify {
     height: 2rem;
     width: 2rem; }
@@ -441,6 +450,8 @@ footer {
   header {
     position: static;
     top: 0; }
+  .ctIndex__section {
+    padding: 5rem 0 3rem 0; }
   .ctIndex__section__title {
     font-size: 2.8rem; }
   .ctIndex__serv__span {
@@ -462,7 +473,9 @@ footer {
     footer .navFooter {
       display: none; }
     footer .datosContacto {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+    footer .address {
+      text-align: right; } }
 
 @media only screen and (min-width: 600px) {
   /* index */
@@ -497,7 +510,7 @@ footer {
     grid-template-areas: ". tituloIn tituloIn ." ". depiIn maniIn ." ". perfIn  podoIn .";
     background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
     height: 1350px;
-    padding: 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     gap: 6rem; }
     .ctIndex__section__serv {
       gap: 2rem; }
