@@ -246,41 +246,46 @@ header {
           transition: all 300ms; }
 
 /* "Turnos" Page */
-#mainTurnos {
+.mainTurnos {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
   background: linear-gradient(to bottom, #ae7f6d 0%, #c49572 28%, #ba996c 93%);
   padding: 3rem;
-  gap: 3rem; }
-  #mainTurnos .imgTurnos {
+  gap: 2rem; }
+  .mainTurnos .imgTurnos {
     width: 80%;
     max-width: 400px;
     align-self: center;
     justify-self: center;
     box-shadow: 0 0px 10px 5px #2b2c28b4;
     border-radius: 10px; }
+  .mainTurnos__infoto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem; }
 
-#turnExpl {
+.turnExpl {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  gap: 1rem; }
+  .turnExpl #florLotus {
+    width: 7rem;
+    height: 7rem; }
+  .turnExpl #prSpan {
+    width: 150px; }
 
 b {
   font-size: 1.8rem; }
 
-#florLotus {
-  width: 7rem;
-  height: 7rem; }
-
-#prSpan {
-  width: 150px; }
-
 .tildes {
   font-family: "fuenteTitulo";
-  font-size: 1.8rem; }
+  font-size: 0.8em; }
 
 .textoTurnos {
   font-family: "fuenteTexto";
@@ -596,22 +601,17 @@ footer {
   .ctGal__figu:nth-child(6) {
     grid-column-start: span 3; }
   /* "Turnos" */
-  #mainTurnos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 500px 400px; }
-    #mainTurnos .imgTurnos {
-      grid-column-start: span 3;
-      max-width: 650px; }
-  #tiTurno {
-    grid-column-start: span 3; }
-  #turnExpl {
-    grid-column-start: span 2;
-    grid-column-end: -1;
-    gap: 1rem;
-    max-width: 400px;
-    align-self: center;
-    justify-self: center; }
+  .mainTurnos {
+    min-height: 60vh;
+    gap: 8rem; }
+    .mainTurnos__infoto {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10vw; }
+  .turnExpl {
+    max-width: 415px; }
   .textoTurnos {
     font-size: 2rem; }
   /* "Contacto" */
@@ -646,7 +646,10 @@ footer {
   .ctServi__data__list {
     font-size: 4.5rem; }
   #tituloServ {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+  .mainTurnos .imgTurnos {
+    max-width: 600px;
+    width: 600px; } }
 
 /* Correcciones Bootstrap */
 * {
